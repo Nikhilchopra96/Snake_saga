@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 89px;
+    right: 360px;
+    font-size: 39px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 130px;
+    right: 300px;
+    font-size: 39px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+    background: linear-gradient(rgb(68, 212, 68), rgb(5, 57, 15));
+    position: absolute;
+    top: 100px;
+    left: 390px;
+    width: 62vmin;
+    height: 62vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background: linear-gradient(rgb(255, 202, 109), rgb(255, 255, 55));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 11px;
+}
+
+.snake{
+    background: linear-gradient(rgb(116, 45, 23), rgb(201, 201, 0));
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 15px;
+}
